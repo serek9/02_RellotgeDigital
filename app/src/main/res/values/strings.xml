@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DigitalClock</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_sel12h">Mode 12h</string>
+    <string name="action_sel24h">Mode 24h</string>
+    <string name="no_time" translatable="false">--:--:--</string>
+    <string name="no_date" translatable="false">--/--/----</string>
+    <string name="the_time_is">The time is</string>
+
+</resources>
