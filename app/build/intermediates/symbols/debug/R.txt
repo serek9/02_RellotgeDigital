@@ -410,7 +410,9 @@ int id action_bar_root 0x7f0c003b
 int id action_bar_spinner 0x7f0c0001
 int id action_bar_subtitle 0x7f0c0024
 int id action_bar_title 0x7f0c0023
+int id action_chFormat 0x7f0c0053
 int id action_context_bar 0x7f0c0041
+int id action_mDay 0x7f0c0054
 int id action_menu_divider 0x7f0c0002
 int id action_menu_presenter 0x7f0c0003
 int id action_mode_bar 0x7f0c003d

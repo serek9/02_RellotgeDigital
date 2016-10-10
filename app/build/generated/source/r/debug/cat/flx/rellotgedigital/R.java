@@ -1517,7 +1517,9 @@ containing a value of this type.
         public static final int action_bar_spinner=0x7f0c0001;
         public static final int action_bar_subtitle=0x7f0c0024;
         public static final int action_bar_title=0x7f0c0023;
+        public static final int action_chFormat=0x7f0c0053;
         public static final int action_context_bar=0x7f0c0041;
+        public static final int action_mDay=0x7f0c0054;
         public static final int action_menu_divider=0x7f0c0002;
         public static final int action_menu_presenter=0x7f0c0003;
         public static final int action_mode_bar=0x7f0c003d;

@@ -66,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
 		case R.id.action_sel24h:
 			change12or24(!sel24h);
 			return true;
+		case R.id.action_chFormat:
+			changeDate(!chFormat);//TODO
+			return true;
 		}
 		return super.onOptionsItemSelected(item);
 	}
@@ -83,4 +86,16 @@ public class MainActivity extends AppCompatActivity {
 
 	}
 
+	public void changeDate(boolean chFormat) {
+		if (chFormat) {
+			sel24hMenuItem.setTitle(R.string.action_sel12h);
+			timeFormat="HH:mm:ss";
+		}
+		else {
+			sel24hMenuItem.setTitle(R.string.action_sel24h);
+			timeFormat="KK:mm:ss a";
+		}
+		this.sel24h = sel24h;
+
+	}
 }
