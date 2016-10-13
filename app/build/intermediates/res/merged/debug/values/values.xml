@@ -192,6 +192,9 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <!-- From: file:/Users/DAM/AndroidStudioProjects/02_RellotgeDigital/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="action_DayIs">Today is</string>
+    <string name="action_chFormat">Change date format</string>
+    <string name="action_mDay">Show day</string>
     <string name="action_sel12h">Mode 12h</string>
     <string name="action_sel24h">Mode 24h</string>
     <string name="app_name">DigitalClock</string>

@@ -12,12 +12,12 @@
     <item
         android:id="@+id/action_chFormat"
         android:orderInCategory="100"
-        android:title="Cambiar format"
+        android:title="@string/action_chFormat"
         app:showAsAction="never"/>
 
     <item
         android:id="@+id/action_mDay"
         android:orderInCategory="100"
-        android:title="Mostra el dia"
+        android:title="@string/action_mDay"
         app:showAsAction="never"/>
 </menu><!-- From: file:/Users/DAM/AndroidStudioProjects/02_RellotgeDigital/app/src/main/res/menu/main.xml -->

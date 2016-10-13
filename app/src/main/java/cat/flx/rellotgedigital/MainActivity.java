@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 						new SimpleDateFormat(format, Locale.US).format(new Date());
 				time = getResources().getString(R.string.the_time_is) + " " + time;
 				Toast.makeText(MainActivity.this, time, Toast.LENGTH_SHORT).show();
-				Log.d("flx", time);
+				Log.d("sergio", time);
 			}
 		});
 
@@ -67,7 +68,10 @@ public class MainActivity extends AppCompatActivity {
 			change12or24(!sel24h);
 			return true;
 		case R.id.action_chFormat:
-			changeDate(!chFormat);//TODO
+			dateFormat = chFormat(dateFormat);
+			return true;
+		case R.id.action_mDay:
+			showDayToast();
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
@@ -86,16 +90,21 @@ public class MainActivity extends AppCompatActivity {
 
 	}
 
-	public void changeDate(boolean chFormat) {
-		if (chFormat) {
-			sel24hMenuItem.setTitle(R.string.action_sel12h);
-			timeFormat="HH:mm:ss";
+	public String chFormat(String dateFormat) {
+		if (dateFormat.equals("MM/dd/yyyy")) {
+			return "dd/MM/yyyy";
 		}
 		else {
-			sel24hMenuItem.setTitle(R.string.action_sel24h);
-			timeFormat="KK:mm:ss a";
+			return "MM/dd/yyyy";
 		}
-		this.sel24h = sel24h;
+	}
 
+	public void showDayToast(){
+		Calendar calendar = Calendar.getInstance();
+		Locale lang = new Locale("en", "US");
+		lang = lang.getDefault();
+		Date date = calendar.getTime();
+		Toast.makeText(MainActivity.this, getString(R.string.action_DayIs)+" "+new SimpleDateFormat("EEEE", lang).format(date.getTime()), Toast.LENGTH_SHORT).show();
+		//Coge idioma del sistema, muestra toast con el string action_mDay+dia, *STACKOVERFLOW*
 	}
 }

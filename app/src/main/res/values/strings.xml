@@ -5,8 +5,11 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_sel12h">Mode 12h</string>
     <string name="action_sel24h">Mode 24h</string>
+    <string name="action_chFormat">Change date format</string>
     <string name="no_time" translatable="false">--:--:--</string>
     <string name="no_date" translatable="false">--/--/----</string>
     <string name="the_time_is">The time is</string>
+    <string name="action_mDay">Show day</string>
+    <string name="action_DayIs">Today is</string>
 
 </resources>
